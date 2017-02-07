@@ -1,0 +1,20 @@
+{
+  "name": "fishy-feeder",
+  "version": "1.0.0",
+  "description": "Fishy Feeder",
+  "main": "pi_node.js",
+  "scripts:": {
+    "install": "sudo service motion start",
+    "stop": "sudo service motion stop",
+    "start": "node pi_node.js"
+  },
+  "author": "Michael Robertson, Adriana Rios, Kayla Saythongkham, David Rouse",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
