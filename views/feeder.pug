@@ -1,10 +1,15 @@
 extends layout.pug
 block content
-    div.content
-        ul#feeder
-            li
-                a.pure-button.pure-button-primary(href="#") Feed My Fish!
-            li
-                h2 Live Feed
-            li
-                img#camera(src='')
+  div.content
+    h2.content-head.is-center Feed My Fish
+    div.pure-g
+      div.l-box-lrg.pure-u-1.pure-u-md-2-5
+        ul.feeder
+          li
+            a.pure-button(href="#") Feed My Fish!
+      div.l-box-lrg.pure-u-1.pure-u-md-3-5
+        ul.feeder
+          li 
+            h4 Live Feed
+          li 
+            img#camera(src='')

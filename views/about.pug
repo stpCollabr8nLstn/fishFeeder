@@ -1,26 +1,30 @@
 extends layout.pug
+block content
+  div.content
+    h2.content-head.is-center View Fish
+    div.pure-g
+      div.l-box-lrg.pure-u-1.pure-u-md-2-5
+        h4 Contact Us
 
-div.content
-      h2.content-head.is-center View Fish
-      div.pure-g
-            div.l-box-lrg.pure-u-1.pure-u-md-2-5
-              form.pure-form.pure-form-stacked
-                fieldset
-                    label(for="name") Your Name
-                    input#name(type="text" placeholder="Your Name")
+        form.pure-form.pure-form-stacked
+          fieldset
+          label(for="name") Your Name
+          input#name(type="text" placeholder="e.g. John Doe")
 
-                    label(for="email") Your Email
-                    input#email(type="email" placeholder="Your Email")
+          label(for="email") Your Email
+          input#email(type="email" placeholder="e.g. john_doe@email.com")
 
-                    label(for="password") Your Password
-                    input#password(type="password" placeholder="Your Password")
+          label(for="message") Your Password
+          textarea#message(placeholder="Your fishy is awesome!")
 
-                    button.pure-button(type="submit") Sign Up
+          button.pure-button(type="submit") Send
 
-            div.l-box-lrg.pure-u-1.pure-u-md-3-5
-                  h2 About Us
-                  p
-                        We're a couple of students at Texas State studying computer science.
-                        As part of our project for Software Engineering we decided to build
-                        a fish feeder. Feel free to send us any questions in the form provided.
-                  img#hungry-fish(src="/public/pictures/hungry-fish.png")
+      div.l-box-lrg.pure-u-1.pure-u-md-3-5
+        h4 About Us
+
+        p.
+          We're a couple of students at Texas State studying computer science.
+          As part of our project for Software Engineering we decided to build
+          a fish feeder. Feel free to send us any questions in the form provided.
+            
+        img#hungry-fish(src='/pictures/hungry_fish.png')

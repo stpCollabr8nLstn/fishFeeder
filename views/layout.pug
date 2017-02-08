@@ -16,22 +16,26 @@ html(lang="en")
   body
     div.header
       div.home-menu.pure-menu.pure-menu-horizontal.pure-menu-fixed
+        a.pure-menu-heading(href="/") Fishy Feeder
         ul.pure-menu-list
-          li.pure-menu-item pure-menu-selected
-            a.pure-menu-link(href="#") Home
+          li.pure-menu-item.pure-menu-selected
+            a.pure-menu-link(href="/") Home
           li.pure-menu-item
             a.pure-menu-link(href="/feeder") Feed Fish
-        ul.pure-menu-list
           li.pure-menu-item
-            a.pure-menu-link(href="/interface") View Fish
-        ul.pure-menu-list
+            a.pure-menu-link(href="/view") View Fish
           li.pure-menu-item
             a.pure-menu-link(href="/about") About Us
-    div.splash-container
-      block splash
-    div.content-wrapper
-      block content
+
+    if showSplash === true
+      div.splash-container
+        block splash
+
+    if showContent === true
+      div.content-wrapper
+        block content
+
     block foot
-      div.footer l-box is-center
+      div.footer.l-box.is-center
         ul
           li &copy; 2017
