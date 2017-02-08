@@ -1,5 +1,8 @@
-html
-	head
-		title= title
-	body
-		h1= message
+extends layout.pug
+block banner
+  h1 Feed My Fish
+block content
+    div
+      ul(class="btn-container")
+        li(class="pure-button", id="view-fish-btn") View Fish
+        li(class="pure-button disabled", id="feed-fish") Feed Fish

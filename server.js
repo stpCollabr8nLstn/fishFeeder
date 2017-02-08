@@ -8,8 +8,13 @@ app.set('views', __dirname + '/views')
 app.set('view engine', 'pug')
 app.use(express.static(__dirname + '/public'))
 
+// Serve homepage
+app.get('/', (req, res) => {
+  res.render('index', {title: 'Home'});
+});
+
 // Serve interface
-app.get('/interface', function(req, res){
+app.get('/interface', (req, res) => {
     res.render('interface');
 });
 
