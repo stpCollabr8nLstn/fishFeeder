@@ -1,8 +1,8 @@
 node_modules
 npm-debug.*
 logs
-**/.AppleDouble
-**/.DS_Store
+**/.AppleDouble/*
+**/.DS_Store/*
 views/.AppleDouble
 views/.DS_Store
 public/.AppleDouble
