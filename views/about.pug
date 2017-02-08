@@ -1,0 +1,26 @@
+extends layout.pug
+
+div.content
+      h2.content-head.is-center View Fish
+      div.pure-g
+            div.l-box-lrg.pure-u-1.pure-u-md-2-5
+              form.pure-form.pure-form-stacked
+                fieldset
+                    label(for="name") Your Name
+                    input#name(type="text" placeholder="Your Name")
+
+                    label(for="email") Your Email
+                    input#email(type="email" placeholder="Your Email")
+
+                    label(for="password") Your Password
+                    input#password(type="password" placeholder="Your Password")
+
+                    button.pure-button(type="submit") Sign Up
+
+            div.l-box-lrg.pure-u-1.pure-u-md-3-5
+                  h2 About Us
+                  p
+                        We're a couple of students at Texas State studying computer science.
+                        As part of our project for Software Engineering we decided to build
+                        a fish feeder. Feel free to send us any questions in the form provided.
+                  img#hungry-fish(src="/public/pictures/hungry-fish.png")
