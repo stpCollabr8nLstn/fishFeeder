@@ -4,9 +4,8 @@
   "description": "Fishy Feeder",
   "main": "pi_node.js",
   "scripts:": {
-    "install": "sudo service motion start",
-    "stop": "sudo service motion stop",
-    "start": "node pi_node.js"
+    "postinstall": "sudo service motion start",
+    "stop": "sudo service motion stop"
   },
   "author": "Michael Robertson, Adriana Rios, Kayla Saythongkham, David Rouse",
   "license": "",
@@ -15,6 +14,8 @@
     "url": ""
   },
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "jade": "^1.11.0",
+    "pi-arest": "^1.3.1"
   }
 }
