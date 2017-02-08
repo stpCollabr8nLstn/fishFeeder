@@ -13,9 +13,19 @@ app.get('/', (req, res) => {
   res.render('index', {title: 'Home'});
 });
 
-// Serve interface
-app.get('/interface', (req, res) => {
-    res.render('interface');
+// Serve view
+app.get('/view', (req, res) => {
+    res.render('view', {title: 'View Fish'});
+});
+
+// Serve feeder
+app.get('/feeder', (req, res) => {
+  res.render('index', {title: 'Feeder'});
+});
+
+// Serve about
+app.get('/about', (req, res) => {
+  res.render('index', {title: 'About Us'});
 });
 
 var piREST = require('pi-arest')(app);
@@ -31,10 +41,10 @@ piREST.set_name('my_RPi');
 //    },
 //    read: function () {
 //        var readout = sensorLib.read();
-//        
+//
 //        piREST.variable('temperature',readout.temperature.toFixed(2));
 //       piREST.variable('humidity', readout.humidity.toFixed(2));
-//        
+//
 //        console.log('Temperature: ' + readout.temperature.toFixed(2) + 'C, ' +
 //            'humidity: ' + readout.humidity.toFixed(2) + '%');
 //        setTimeout(function () {

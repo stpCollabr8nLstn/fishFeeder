@@ -1,8 +1,10 @@
 extends layout.pug
-block banner
-  h1 Feed My Fish
-block content
-    div
-      ul(class="btn-container")
-        li(class="pure-button", id="view-fish-btn") View Fish
-        li(class="pure-button disabled", id="feed-fish") Feed Fish
+block splash
+  div.splash
+    h1.splash-head Fishy Feeder
+    p.splash-subhead Welcome to Fishy Feeder where you can feed my fish!
+    ul#home-btns
+      li
+        a.pure-button(href="/view") View Fish
+      li
+        a.pure-button.pure-button-primary.disabled(href="/feeder") Feed My Fish
