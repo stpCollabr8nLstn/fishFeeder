@@ -6,6 +6,7 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     script(src="/js/jquery-2.0.3.min.js")
     script(src="/js/interface.js")
+    script(src="/js/menu.js")
     link(rel='stylesheet', href='https://unpkg.com/purecss@0.6.2/build/pure-min.css')
     link(rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css")
     link(rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
@@ -14,18 +15,28 @@ html(lang="en")
       script(src="/js/jquery-2.0.3.min.js")
       script(src="/js/interface.js")
   body
-    div.header
-      div.home-menu.pure-menu.pure-menu-horizontal.pure-menu-fixed
-        a.pure-menu-heading(href="/") Fishy Feeder
-        ul.pure-menu-list
-          li.pure-menu-item.pure-menu-selected
-            a.pure-menu-link(href="/") Home
-          li.pure-menu-item
-            a.pure-menu-link(href="/feeder") Feed Fish
-          li.pure-menu-item
-            a.pure-menu-link(href="/view") View Fish
-          li.pure-menu-item
-            a.pure-menu-link(href="/about") About Us
+
+    div#menu.menu-wrapper.pure-g
+      div.pure-u-1.pure-u-md-1-3
+        div.pure-menu
+          a.pure-menu-heading(href="/") Fishy Feeder
+          a#toggle.custom-toggle(href="#")
+            s.bar
+            s.bar
+      div.pure-u-1.pure-u-md-1-3
+        div.pure-menu.pure-menu-horizontal.custom-can-transform
+          ul.pure-menu-list
+      div.pure-u-1.pure-u-md-1-3
+        div.pure-menu.pure-menu-horizontal.custom-menu-3.custom-can-transform
+          ul.pure-menu-list
+            li.pure-menu-item
+              a.pure-menu-link(href="/") Home
+            li.pure-menu-item
+              a.pure-menu-link(href="/feeder") Feed Fish
+            li.pure-menu-item
+              a.pure-menu-link(href="/view") View Fish
+            li.pure-menu-item
+              a.pure-menu-link(href="/about") About Us
 
     if showSplash === true
       div.splash-container

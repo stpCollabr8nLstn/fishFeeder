@@ -90,26 +90,21 @@ a.pure-button-primary {
 /*
  * -- MENU STYLES --
  */
-
+/*
 .home-menu {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
-.home-menu {
-    background: #2d3e50;
-}
+
 .pure-menu.pure-menu-fixed {
     border-bottom: none;
     z-index: 4;
 }
 
-.home-menu .pure-menu-heading {
-    color: white;
-    font-weight: 400;
-    font-size: 120%;
-}
 
+.pure-menu-selected .pure-menu-link,
+.pure-menu-selected .pure-menu-link:visited,
 .home-menu .pure-menu-selected a {
     color: white;
 }
@@ -122,7 +117,7 @@ a.pure-button-primary {
     background: none;
     border: none;
     color: #AECFE5;
-}
+}*/
 
 
 /*
@@ -188,7 +183,7 @@ a.pure-button-primary {
 
 /* We want to give the content area some more padding */
 .content {
-    padding: 1em 1em 3em; 
+    padding: 1em 1em 3em;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -271,6 +266,9 @@ a.pure-button-primary {
         font-size: 250%;
     }
 
+    ul#home-btns li, ul.feeder li {
+      display: inline;
+    }
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
@@ -287,6 +285,10 @@ a.pure-button-primary {
     .splash-head {
         font-size: 300%;
     }
+
+    ul#home-btns li, ul.feeder li {
+      display: inline;
+    }
 }
 
 /*
@@ -296,7 +298,7 @@ a.pure-button-primary {
   width: 640px;
   height: 360px;
 }
- 
+
 ul#home-btns, ul.feeder {
   margin: 0;
   padding: 0;
@@ -304,7 +306,7 @@ ul#home-btns, ul.feeder {
 }
 
 ul#home-btns li, ul.feeder li {
-  display: inline;
+  display: block;
 }
 
 ul#home-btns li.right {
@@ -319,4 +321,108 @@ ul#home-btns li.right {
 #hungry-fish-home {
   width: 150px;
   height: 150px;
+}
+
+/*
+ * -- RESPONSIVE MENU
+ */
+
+.pure-menu-heading {
+   color: white;
+   font-weight: 400;
+   font-size: 120%;
+}
+
+.menu-wrapper {
+  background-color: #2d3e50;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: .75em;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 3.1em;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+  z-index: 4;
+}
+
+.menu-wrapper.open {
+  height: 14em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.custom-toggle .bar {
+   background-color: white;
+   display: block;
+   width: 20px;
+   height: 2px;
+   border-radius: 100px;
+   position: absolute;
+   top: 18px;
+   right: 7px;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+   -webkit-transform: translateY(-6px);
+   -moz-transform: translateY(-6px);
+   -ms-transform: translateY(-6px);
+   transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
+#menu a {
+    color: #6FBEF3;
+}
+#menu li a:hover,
+#rmenu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+@media (max-width: 47.999em) {
+
+   .custom-menu-3 {
+     text-align: left;
+   }
+
+   .custom-toggle {
+     display: block;
+   }
+
 }
