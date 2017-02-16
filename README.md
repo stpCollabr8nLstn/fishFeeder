@@ -3,10 +3,10 @@
 ---
 
 #### Authors
-##### Kayla Saythongkham
-##### Michael Robertson
-##### David Rouse
-##### Adriana Rios
+- Kayla Saythongkham
+- Michael Robertson
+- David Rouse
+- Adriana Rios
 
 ---
 
