@@ -1,7 +1,6 @@
 # Fish Feeder
 
 ---
-## Team 4 San Marcos
 
 - Kayla Saythongkham
 - Michael Robertson
