@@ -1,6 +1,14 @@
 # Fish Feeder
 
 ---
+## Team 4 San Marcos
+
+- Kayla Saythongkham
+- Michael Robertson
+- David Rouse
+- Adriana Rios
+
+---
 
 ## Project Description
 Our project is an automated fish feeder targeted for users who are forgetful or have a busy schedule that prevents timely feeding of their pet fish. This is ideal for users who spend lots of time away from home for travel or have busy work or school schedules. 
