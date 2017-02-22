@@ -2,8 +2,9 @@
   "name": "fishy-feeder",
   "version": "1.0.0",
   "description": "Fishy Feeder",
-  "main": "pi_node.js",
   "scripts:": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p",
     "postinstall": "sudo service motion start",
     "stop": "sudo service motion stop"
   },
@@ -11,11 +12,21 @@
   "license": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/CS4398/fishFeeder.git"
   },
   "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
     "express": "^4.14.1",
-    "pi-arest": "^1.3.1",
-    "pug": "^0.1.0"
-  }
+    "extract-text-webpack-plugin": "^1.0.1",
+    "pug": "^0.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {}
 }
