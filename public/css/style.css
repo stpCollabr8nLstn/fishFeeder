@@ -23,6 +23,10 @@ label {
     color: #34495e;
 }
 
+img.cam {
+  -webkit-user-select: none;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -188,7 +192,7 @@ a.pure-button-primary {
 
 /* We want to give the content area some more padding */
 .content {
-    padding: 1em 1em 3em; 
+    padding: 1em 1em 3em;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -296,7 +300,7 @@ a.pure-button-primary {
   width: 640px;
   height: 360px;
 }
- 
+
 ul#home-btns, ul.feeder {
   margin: 0;
   padding: 0;
