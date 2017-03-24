@@ -50,5 +50,5 @@ February 16th (Thursday)
 ---
 [Git Workflow Guide](https://github.com/CS4398/fishFeeder/wiki/Git-Workflow-Guide)
 
--- 
+---
 [State Diagram](https://www.draw.io/#HCS4398%2FfishFeeder%2Fmaster%2FState%20Chart.xml)
