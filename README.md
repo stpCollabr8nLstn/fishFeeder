@@ -40,6 +40,15 @@ Our target users are people who want to manage and maintain their pet fish who m
 
 ---
 
+## Getting started
+1. Download and install [node](https://nodejs.org/en/)
+- From your console or terminal clone the repo `git clone https://github.com/CS4398/fishFeeder.git`
+- run `npm install`
+- run `npm start`
+- Open a browser to [http://localhost:8080/](http://localhost:8080/)
+
+---
+
 ## Important Dates:
 January 31st (Tuesday)
 - [Half-page description of project](https://docs.google.com/document/d/1vjtRJNkYlp7xx6Cyq9gstQOofCKcpTlFORZnBSs70zw/edit)
