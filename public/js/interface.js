@@ -1,29 +1,22 @@
-setInterval(function() {
+function checkFeedTime() {
+  var now = new Date();
+  var curHr = now.getHours();
+  var nxtFeeding;
 
-  // Update temperature
-  $.get("/temperature", function(data) {
-    $("#temperature").html(data.temperature);
-  });
+  if ( curHr < 6 ) {
+    return 6 - curHr;
+  }
 
-  // Update humidity
-  $.get("/humidity", function(data) {
-    $("#humidity").html(data.humidity);
-  });
-  
-}, 2000);
+  if ( curHr > 6 && curHr < 18) {
+    return 18 - curHr;
+  }
 
-setInterval(function() {
+  return ( 24 - curHr ) + 6;
+}
 
-  // Take picture
-  $.get("/camera/snapshot");
-
-  
-}, 10000);
-
-setInterval(function() {
-
-  // Reload picture
-  d = new Date();
-  $("#camera").attr("src","pictures/image.jpg?" + d.getTime());
-  
-}, 1000);
+function revealTime() {
+  $('li.time').removeClass('hidden');
+  $(this).addClass('active');
+  var numHrs = checkFeedTime();
+  $('p.hours').prepend(numHrs);
+}
