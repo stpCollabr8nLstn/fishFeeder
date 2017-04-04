@@ -5,8 +5,11 @@ block content
     div.pure-g
       div.l-box-lrg.pure-u-1.pure-u-md-2-5
         ul.feeder
+          li.time.hidden
+            h4 Next Feeding in:
+            p.hours  hours
           li
-            a.pure-button(href="#") Feed My Fish!
+            a.pure-button.feed-btn(href="#" onClick="revealTime()") Feed My Fish!
       div.l-box-lrg.pure-u-1.pure-u-md-3-5
         ul.feeder
           li
