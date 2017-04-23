@@ -17,7 +17,7 @@ We will implement an app that allows users to set a time that may be repeated da
 
 --- 
 
-## Functionalities:
+## Functionalities
 
 - Feeding fish
 - Provide push notifications
@@ -27,13 +27,13 @@ We will implement an app that allows users to set a time that may be repeated da
 
 ---
 
-## End Users:
+## End Users
 
 Our target users are people who want to manage and maintain their pet fish who may not have so much time to. 
 
 ---
 
-## Technologies:
+## Technologies
 
 - Server is housed in Raspberry Pi B
 - 1080p HD camera (currently set on low resolution for testing)
@@ -49,21 +49,39 @@ Our target users are people who want to manage and maintain their pet fish who m
 
 ---
 
-## Getting started
+## Running Front End Locally
 
 1. Download and install [node](https://nodejs.org/en/)
-2. From your console or terminal clone the repo `git clone https://github.com/CS4398/fishFeeder.git`
-3. run `npm install`
-4. run `npm start`
+2. From your console or terminal clone the repo 
+   ```
+   git clone https://github.com/CS4398/fishFeeder.git
+   ```
+3. Install by running 
+   ```
+   npm install
+   ```
+4. Start the front end by running 
+   ```
+   npm start
+   ```
 5. Open a browser to [http://localhost:8080/](http://localhost:8080/)
 
 ---
 
 ## Run Tests
 
-1. From your console or terminal `npm install -g mocha`
-2. run `cd test`
-3. run `mocha --reporter nyan test.js`
+1. From your console or terminal globally install mocha 
+   ```
+   npm install -g mocha
+   ```
+2. Move to the test directory
+   ```
+   cd test
+   ```
+3. Finally run the tests
+   ```
+   mocha --reporter nyan test.js
+   ```
 
 ---
 ## State Diagram
@@ -123,6 +141,8 @@ When I purchased Ruby (my 4 year old daughter picked her and named her) from Pet
 ![](https://github.com/CS4398/fishFeeder/blob/master/Picture7.png?raw=true)
 
 -- 
+
+## Git Workflow Guide 
 
 [Git Workflow Guide](https://github.com/CS4398/fishFeeder/wiki/Git-Workflow-Guide)
 
