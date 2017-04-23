@@ -140,9 +140,9 @@ When I purchased Ruby (my 4 year old daughter picked her and named her) from Pet
 
 ![](https://github.com/CS4398/fishFeeder/blob/master/Picture7.png?raw=true)
 
--- 
+---
 
 ## Git Workflow Guide 
 
-[Git Workflow Guide](https://github.com/CS4398/fishFeeder/wiki/Git-Workflow-Guide)
+[Git Workflow Guide](https://github.com/CS4398/fishFeeder/wiki)
 
