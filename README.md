@@ -15,6 +15,8 @@ Our project is an automated fish feeder targeted for users who are forgetful or 
 
 We will implement an app that allows users to set a time that may be repeated daily or weekly. Upon app interaction, the device will feed the fish. Users will also be reminded when the fish have been fed. 
 
+--- 
+
 #### Functionalities:
 
 - Feeding fish
@@ -23,9 +25,13 @@ We will implement an app that allows users to set a time that may be repeated da
 - Schedule alerts
 - Livestream of fish
 
+---
+
 #### End Users:
 
 Our target users are people who want to manage and maintain their pet fish who may not have so much time to. 
+
+---
 
 #### Technologies:
 
@@ -33,31 +39,39 @@ Our target users are people who want to manage and maintain their pet fish who m
 - 1080p HD camera (currently set on low resolution for testing)
 - High torque servo rigged up to drill feeder (custom designed for this application)
 - Node.js
-- **Testing:** 
-  
-  - [Mocha](https://mochajs.org/)
-  - [Chai](http://chaijs.com/api/bdd/)
+
+---
+
+#### Unit Tests
+
+- [Mocha](https://mochajs.org/)
+- [Chai](http://chaijs.com/api/bdd/)
 
 ---
 
 ## Getting started
+
 1. Download and install [node](https://nodejs.org/en/)
-- From your console or terminal clone the repo `git clone https://github.com/CS4398/fishFeeder.git`
-- run `npm install`
-- run `npm start`
-- Open a browser to [http://localhost:8080/](http://localhost:8080/)
+2. From your console or terminal clone the repo `git clone https://github.com/CS4398/fishFeeder.git`
+3. run `npm install`
+4. run `npm start`
+5. Open a browser to [http://localhost:8080/](http://localhost:8080/)
 
 ---
 
-## Important Dates:
-January 31st (Tuesday)
-- [Half-page description of project](https://docs.google.com/document/d/1vjtRJNkYlp7xx6Cyq9gstQOofCKcpTlFORZnBSs70zw/edit)
+## Run Tests
 
-February 16th (Thursday)
-- Detailed [requirements](http://cs.txstate.edu/~rp31/Sample_SRS_ContentsSum09.html)
+1. From your console or terminal `npm install -g mocha`
+2. run `cd test`
+3. run `mocha --reporter nyan test.js`
 
 ---
+## State Diagram
+
+![State Diagram](https://github.com/CS4398/fishFeeder/blob/master/State%20Chart.png)
+[Edit](https://www.draw.io/#HCS4398%2FfishFeeder%2Fmaster%2FState%20Chart.xml)
+
+---
+
 [Git Workflow Guide](https://github.com/CS4398/fishFeeder/wiki/Git-Workflow-Guide)
 
----
-[State Diagram](https://www.draw.io/#HCS4398%2FfishFeeder%2Fmaster%2FState%20Chart.xml)
