@@ -43,6 +43,8 @@ app.get('/about', (req, res) => {
   });
 });
 
-var server = app.listen(8080, function() {
+server = app.listen(8080, function() {
     console.log('Listening on port %d', server.address().port);
 });
+
+module.exports = server;
