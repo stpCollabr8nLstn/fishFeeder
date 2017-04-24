@@ -1,5 +1,3 @@
-var dateFormat = require('dateformat');
-
 function checkFeedTime() {
   var now = new Date();
   var curHr = now.getHours();
@@ -22,19 +20,3 @@ function revealTime() {
   var numHrs = checkFeedTime();
   $('p.hours').prepend(numHrs);
 }
-
-function addFeeding() {
-  var now = new Date();
-  var curHr = now.getHours();
-  var curMin = now.getMinutes();
-  if (curHr === 6 || curHr === 18) {
-    if (curMin === 0) {
-      var date = dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-      $(.times).append("<p>"+ date +"</p>");
-    }
-  }
-
-
-}
-
-setInterval(addFeeding, 60000);

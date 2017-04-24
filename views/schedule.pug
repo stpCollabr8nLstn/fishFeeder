@@ -1,4 +1,5 @@
 extends layout.pug
+
 block content
   div.content
     h2.content-head.is-center Feeding Schedule
@@ -6,9 +7,9 @@ block content
       div.l-box-lrg.pure-u-1.pure-u-md-2-5
         ul.schedule
           li
-            h4 Feeding Date & Time
-          li.times
-            p 02/28/2017 6:00pm
+            h4 Recent Feedings Date & Time
+          each val in feedData
+            li= val
 
       div.l-box-lrg.pure-u-1.pure-u-md-3-5
         h4 Camera
