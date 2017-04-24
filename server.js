@@ -1,6 +1,9 @@
 // Require
 var express = require('express');
 var app = express();
+var list = require('./feedings.json');
+
+var { feedings } = list;
 
 // Configure app
 app.set('views', __dirname + '/views')
@@ -21,7 +24,8 @@ app.get('/schedule', (req, res) => {
     res.render('schedule', {
       title: 'Feeding Schedule',
       showContent: true,
-      showSplash: false
+      showSplash: false,
+      feedData: feedings
     });
 });
 
@@ -43,6 +47,29 @@ app.get('/about', (req, res) => {
   });
 });
 
-var server = app.listen(8080, function() {
+// adds a feeding if 6am or 6pm
+function addFeeding() {
+  var now = new Date();
+  var curHr = now.getHours();
+  var curMin = now.getMinutes();
+  if (curHr === 6 || curHr === 18 && curMin === 0) {
+    // keep array length @ 10
+    if (feedings.length === 10) { removeOldest(feedings); }
+    feedings.push(now);
+    console.log('posted time' + now);
+  }
+}
+
+function removeOldest (arr) {
+  // remove 1 element from 0 index
+  arr.splice(0, 1);
+}
+
+// checks addFeeding every minute
+setInterval(addFeeding, 1000);
+
+server = app.listen(8080, function() {
     console.log('Listening on port %d', server.address().port);
 });
+
+module.exports = server;
